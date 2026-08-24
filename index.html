@@ -377,6 +377,44 @@
         .experience p {
             color: #94a3b8;
         }
+        .project-image {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .cea-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .cea-gallery img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .cea-gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 768px) {
+
+        .cea-gallery {
+            grid-template-columns: 1fr;
+            }
+
+        }
 
 
         /* =========================
@@ -781,7 +819,8 @@
                 <article class="project">
 
                     <div class="project-image">
-                        CEA
+                        <img src="img/cea0.png"
+                         alt="Página principal de CEA">
                     </div>
 
                     <div class="project-content">
@@ -839,6 +878,19 @@
                                target="_blank">
                                 Ver código
                             </a>
+
+                        </div>
+
+                        <div class="cea-gallery">
+
+                            <img src="img/cea1.png"
+                             alt="Página principal del proyecto CEA(Reposive)">
+
+                            <img src="img/cea2.png"
+                             alt="Maquinaria del proyecto CEA">
+
+                            <img src="img/cea4.png"
+                             alt="Panel de administración para crear productos del proyecto CEA">
 
                         </div>
 
